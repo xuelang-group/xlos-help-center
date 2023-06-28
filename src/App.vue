@@ -12,7 +12,7 @@
       <div class="card">
         <div class="card-item" v-for="item in menus" :key="item.key">
           <div :class="`card-description ${item.key}`">
-            <div class="info">
+            <div class="info" @click="window.open(item.url)">
               <div>{{ item.label }}</div>
               <div>{{ item.description }}</div>
               <a :href="item.url" target="_blank">查看全部</a>
@@ -308,6 +308,11 @@ html {
                 color: #fff;
                 padding: 5px 10px;
                 text-decoration: none;
+
+                &:hover {
+                  background: #FFFFFF;
+                  font-weight: normal;
+                }
               }
             }
 
@@ -326,6 +331,10 @@ html {
               &::before {
                 background: linear-gradient(90deg, #30A9FF 0%, rgba(127, 191, 255, 0.10) 100%);
               }
+
+              a:hover {
+                color: #0095FF;
+              }
             }
 
             &.hufu {
@@ -333,6 +342,10 @@ html {
 
               &::before {
                 background: linear-gradient(90deg, #3098FF 0%, rgba(127, 180, 255, 0.10) 100%);
+              }
+
+              a:hover {
+                color: #1886F3;
               }
             }
 
@@ -342,6 +355,10 @@ html {
               &::before {
                 background: linear-gradient(90deg, #3086FF 0%, rgba(134, 174, 255, 0.10) 100%);
               }
+
+              a:hover {
+                color: #1979FF;
+              }
             }
 
             &.algo {
@@ -350,6 +367,10 @@ html {
               &::before {
                 background: linear-gradient(90deg, #5A83FF 0%, rgba(159, 175, 255, 0.10) 100%);
               }
+
+              a:hover {
+                color: #3265FF;
+              }
             }
 
             &.gopt {
@@ -357,6 +378,10 @@ html {
 
               &::before {
                 background: linear-gradient(90deg, #7E7EFF 0%, rgba(173, 166, 255, 0.10) 100%);
+              }
+
+              a:hover {
+                color: #4C4CFF;
               }
             }
           }
