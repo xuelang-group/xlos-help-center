@@ -39,29 +39,29 @@ const menus = reactive([{
   description: "混合建模与联合计算",
   url: "http://docs.xuelangyun.com",
   links: [{
-    "label": "雪浪算盘是什么",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E7%AE%97%E7%9B%98/%E9%9B%AA%E6%B5%AA%E7%AE%97%E7%9B%98%E6%98%AF%E4%BB%80%E4%B9%88/"
-  }, {
-    "label": "雪浪算盘视频集(持续更新)",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E7%AE%97%E7%9B%98/%E9%9B%AA%E6%B5%AA%E7%AE%97%E7%9B%98%E8%A7%86%E9%A2%91%E9%9B%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"
-  }, {
-    "label": "开始使用雪浪算盘",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E7%AE%97%E7%9B%98/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%E9%9B%AA%E6%B5%AA%E7%AE%97%E7%9B%98/"
-  }, {
-    "label": "雪浪算盘客户端安装手册&问题",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E7%AE%97%E7%9B%98/%E9%9B%AA%E6%B5%AA%E7%AE%97%E7%9B%98%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C&%E9%97%AE%E9%A2%98/"
+    "label": "雪浪OS·系统工程是什么",
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E6%98%AF%E4%BB%80%E4%B9%88/"
   }, {
     "label": "算盘入门第一篇-基础概念",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E7%AF%87-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E7%AF%87-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"
+  }, {
+    "label": "雪浪OS·系统工程视频集(持续更新)",
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E8%A7%86%E9%A2%91%E9%9B%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"
   }, {
     "label": "算盘入门第二篇-应用开发",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"
+  }, {
+    "label": " 开始使用雪浪OS",
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%E9%9B%AA%E6%B5%AAOS/"
   }, {
     "label": "算盘入门第三篇-机器学习频道",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%89%E7%AF%87-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93/"
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%89%E7%AF%87-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93/"
+  }, {
+    "label": "客户端安装手册&问题",
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C&%E9%97%AE%E9%A2%98/"
   }, {
     "label": "算盘入门第四篇-开发组件",
-    "url": "https://docs.xuelangyun.com/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E5%9B%9B%E7%AF%87-%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/"
+    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E5%9B%9B%E7%AF%87-%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/"
   }]
 }, {
   key: 'hufu', 
