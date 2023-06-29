@@ -12,10 +12,10 @@
       <div class="card">
         <div class="card-item" v-for="item in menus" :key="item.key">
           <div :class="`card-description ${item.key}`">
-            <div class="info" @click="window.open(item.url)">
+            <div class="info" @click="event => openUrl(item)">
               <div>{{ item.label }}</div>
               <div>{{ item.description }}</div>
-              <a :href="item.url" target="_blank">查看全部</a>
+              <a>查看全部</a>
             </div>
           </div>
           <div class="card-list">
@@ -37,31 +37,31 @@ const menus = reactive([{
   key: 'predict',
   label: "系统工程",
   description: "混合建模与联合计算",
-  url: "http://docs.xuelangyun.com",
+  url: "/suanpan",
   links: [{
     "label": "雪浪OS·系统工程是什么",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E6%98%AF%E4%BB%80%E4%B9%88/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E6%98%AF%E4%BB%80%E4%B9%88/"
   }, {
     "label": "算盘入门第一篇-基础概念",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E7%AF%87-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E7%AF%87-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"
   }, {
     "label": "雪浪OS·系统工程视频集(持续更新)",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E8%A7%86%E9%A2%91%E9%9B%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E8%A7%86%E9%A2%91%E9%9B%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"
   }, {
     "label": "算盘入门第二篇-应用开发",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"
   }, {
     "label": " 开始使用雪浪OS",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%E9%9B%AA%E6%B5%AAOS/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%E9%9B%AA%E6%B5%AAOS/"
   }, {
     "label": "算盘入门第三篇-机器学习频道",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%89%E7%AF%87-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%89%E7%AF%87-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93/"
   }, {
     "label": "客户端安装手册&问题",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C&%E9%97%AE%E9%A2%98/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C&%E9%97%AE%E9%A2%98/"
   }, {
     "label": "算盘入门第四篇-开发组件",
-    "url": "https://docs.xuelangyun.com/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E5%9B%9B%E7%AF%87-%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/"
+    "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E5%9B%9B%E7%AF%87-%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/"
   }]
 }, {
   key: 'hufu', 
@@ -97,61 +97,61 @@ const menus = reactive([{
   key: 'gonggong', 
   label: "应用搭建", 
   description: "工业低代码开发平台", 
-  url: "https://docs.xuelangyun.com/gonggong/",
+  url: "/gonggong/",
   links: [{
     "label": "共工产品概述",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%85%B1%E5%B7%A5%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%85%B1%E5%B7%A5%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0"
   }, {
     "label": "共工名词解释",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%85%B1%E5%B7%A5%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%85%B1%E5%B7%A5%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"
   }, {
     "label": "搭建应用demo",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E6%90%AD%E5%BB%BA%E5%BA%94%E7%94%A8demo"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E6%90%AD%E5%BB%BA%E5%BA%94%E7%94%A8demo"
   }, {
     "label": "如何注册登录",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95"
   }, {
     "label": "工作流介绍",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BB%8B%E7%BB%8D"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BB%8B%E7%BB%8D"
   }, {
     "label": "领域模型介绍",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E9%A2%86%E5%9F%9F%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E9%A2%86%E5%9F%9F%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"
   }, {
     "label": "逻辑功能介绍",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E9%80%BB%E8%BE%91%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E9%80%BB%E8%BE%91%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"
   }, {
     "label": "枚举功能介绍",
-    "url": "https://docs.xuelangyun.com/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%9E%9A%E4%B8%BE%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"
+    "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%9E%9A%E4%B8%BE%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"
   }]
 }, {
   key: 'algo', 
   label: "算法开发", 
   description: "图形化构建机器学习模型", 
-  url: "https://docs.xuelangyun.com/docs/category/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93%E5%AE%9E%E8%B7%B5/",
+  url: "/suanpan/docs/category/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93%E5%AE%9E%E8%B7%B5/",
   links: [{
     "label": "数据处理案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%A1%88%E4%BE%8B/"
   }, {
     "label": "产品架构",
     "url": "http://10.88.40.5/help.html#%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84"
   }, {
     "label": "特征工程案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E6%A1%88%E4%BE%8B/"
   }, {
     "label": "离群点案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E7%A6%BB%E7%BE%A4%E7%82%B9%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E7%A6%BB%E7%BE%A4%E7%82%B9%E6%A1%88%E4%BE%8B/"
   }, {
     "label": "分类案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E5%88%86%E7%B1%BB%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E5%88%86%E7%B1%BB%E6%A1%88%E4%BE%8B/"
   }, {
     "label": "回归案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E5%9B%9E%E5%BD%92%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E5%9B%9E%E5%BD%92%E6%A1%88%E4%BE%8B/"
   }, {
     "label": "聚类案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E8%81%9A%E7%B1%BB%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E8%81%9A%E7%B1%BB%E6%A1%88%E4%BE%8B/"
   }, {
     "label": "周志华机器学习习题案例",
-    "url": "https://docs.xuelangyun.com/docs/category/%E5%91%A8%E5%BF%97%E5%8D%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%A0%E9%A2%98%E6%A1%88%E4%BE%8B/"
+    "url": "/suanpan/docs/category/%E5%91%A8%E5%BF%97%E5%8D%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%A0%E9%A2%98%E6%A1%88%E4%BE%8B/"
   }]
 }, {
   key: 'gopt', 
@@ -184,6 +184,14 @@ const menus = reactive([{
     "url": ""
   }]
 }]);
+
+const openUrl = function(item) {
+  let url = item.url;
+  if (url.startsWith("/")) {
+    url = location.origin + url;
+  }
+  window.open(url, "_blank");
+}
 </script>
 
 <style lang="less">
@@ -281,6 +289,7 @@ html {
               width: calc(100% - 64px);
               height: calc(100% - 64px);
               color: #fff;
+              cursor: pointer;
 
               div:nth-child(1) {
                 font-size: 18px;
