@@ -27,6 +27,9 @@
           </div>
         </div>
       </div>
+      <div class="footer">
+        <span>Copyright © 2022 雪浪云 All rights reserved 苏ICP备 18034176号-1</span>
+      </div>
     </div>
   </div>
 </template>
@@ -210,6 +213,7 @@ html {
   .xlos-help-center {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     .center {
       &-header {
@@ -230,15 +234,16 @@ html {
 
       &-content {
         flex: 1;
-
+        position: relative;
         .banner {
-          height: 280px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 520px;
           background: url('./assets/banner.png') no-repeat center center;
-          background-size: 1920px 280px;
+          background-size: cover;
           padding: 0 calc((100% - 1200px) / 2);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          z-index: 1;
 
           .title,
           .des {
@@ -246,12 +251,13 @@ html {
           }
 
           .title {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 500;
-            line-height: 40px;
+            line-height: 44px;
             letter-spacing: 0em;
             color: #1C2126;
             margin-bottom: 16px;
+            margin-top: 134px;
           }
 
           .des {
@@ -263,15 +269,41 @@ html {
           }
         }
 
+        .footer {
+          background: url('./assets/footer.png') no-repeat center center;
+          height: 600px;
+          background-size: cover;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1;
+
+          span {
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #828D99;
+            position: absolute;
+            bottom: 24px;
+            width: 100%;
+            text-align: center;
+          }
+        }
+
         .card {
-          padding: 64px calc((100% - 1200px) / 2);
+          padding: 356px calc((100% - 1201px) / 2) 244px;
+          position: relative;
+          z-index: 2;
 
           &-item {
             width: 100%;
             height: 200px;
-            border: 1px solid #DCDEE1;
             margin-bottom: 32px;
             display: flex;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px 0px rgba(0, 29, 77, 0.12);
+            border-radius: 4px;
 
             &:last-child {
               margin-bottom: 0;
@@ -303,6 +335,7 @@ html {
                 font-weight: normal;
                 line-height: 22px;
                 margin-bottom: 16px;
+                color: rgba(255, 255, 255, 0.85);
               }
 
               a {
@@ -332,6 +365,8 @@ html {
               left: 0;
               width: 100%;
               height: 100%;
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
             }
 
             &.predict {
