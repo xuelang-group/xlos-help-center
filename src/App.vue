@@ -162,29 +162,29 @@ const menus = reactive([{
   description: "进化多目标优化算法平台", 
   url: "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45",
   links: [{
-    "label": "用户手册",
+    "label": "产品简介",
     "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "首页导航",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "GOpt基础知识介绍",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "GOpt模板搭建流程",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "GOpt模板调试",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "组件参数介绍",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "拓展工具列表",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "",
-    "url": ""
+    "label": "我的组件",
+    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }]
 }]);
 
