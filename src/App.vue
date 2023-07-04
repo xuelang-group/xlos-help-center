@@ -70,7 +70,7 @@ const menus = reactive([{
   key: 'hufu', 
   label: "数据建模", 
   description: "松耦合组件化数据中台", 
-  url: "http://10.88.40.5/help.html",
+  url: "http://120.195.198.50/help.html",
   links: [{
     "label": "虎符产品概述",
     "url": "http://10.88.40.5/help.html#%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0"
