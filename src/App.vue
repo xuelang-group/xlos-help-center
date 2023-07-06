@@ -2,11 +2,13 @@
   <div class="xlos-help-center">
     <div class="center-header">
       <a class="redirect" href="https://xlos.xuelangyun.com/web" target="_blank"></a>
-      <img src="./assets/logo.png" width="215" height="32" />
+      <img src="./assets/logo.svg" width="215" height="32" />
+      <div class="divider"></div>
+      <span class="name">帮助中心</span>
     </div>
     <div class="center-content">
       <div class="banner">
-        <div class="title">欢迎使用雪浪OS帮助中心</div>
+        <div class="title">欢迎使用雪浪云工业互联网平台帮助中心</div>
         <div class="des">在这里，我们为你提供帮助与支持</div>
       </div>
       <div class="card">
@@ -42,28 +44,28 @@ const menus = reactive([{
   description: "混合建模与联合计算",
   url: "/suanpan",
   links: [{
-    "label": "雪浪OS·系统工程是什么",
+    "label": "雪浪云工业互联网平台·系统工程是什么",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E6%98%AF%E4%BB%80%E4%B9%88/"
   }, {
-    "label": "算盘入门第一篇-基础概念",
+    "label": "系统工程入门第一篇-基础概念",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E7%AF%87-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"
   }, {
-    "label": "雪浪OS·系统工程视频集(持续更新)",
+    "label": "雪浪云工业互联网平台·系统工程视频集(持续更新)",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E8%A7%86%E9%A2%91%E9%9B%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"
   }, {
-    "label": "算盘入门第二篇-应用开发",
+    "label": "系统工程入门第二篇-应用开发",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"
   }, {
-    "label": " 开始使用雪浪OS",
+    "label": " 开始使用雪浪云工业互联网平台",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%E9%9B%AA%E6%B5%AAOS/"
   }, {
-    "label": "算盘入门第三篇-机器学习频道",
+    "label": "系统工程入门第三篇-机器学习频道",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%89%E7%AF%87-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%91%E9%81%93/"
   }, {
     "label": "客户端安装手册&问题",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E4%BA%86%E8%A7%A3%E9%9B%AA%E6%B5%AAOS%C2%B7%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C&%E9%97%AE%E9%A2%98/"
   }, {
-    "label": "算盘入门第四篇-开发组件",
+    "label": "系统工程入门第四篇-开发组件",
     "url": "/suanpan/docs/%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BC%98%E7%A7%80/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AE%97%E7%9B%98%E5%85%A5%E9%97%A8%E7%AC%AC%E5%9B%9B%E7%AF%87-%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/"
   }]
 }, {
@@ -72,22 +74,22 @@ const menus = reactive([{
   description: "松耦合组件化数据中台", 
   url: "http://120.195.198.50/help.html",
   links: [{
-    "label": "虎符产品概述",
+    "label": "数据建模产品概述",
     "url": "http://10.88.40.5/help.html#%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0"
   }, {
-    "label": "虎符产品架构",
+    "label": "数据建模产品架构",
     "url": "http://10.88.40.5/help.html#%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84"
   }, {
-    "label": "虎符产品功能",
+    "label": "数据建模产品功能",
     "url": "http://10.88.40.5/help.html#%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD"
   }, {
-    "label": "虎符应用场景",
+    "label": "数据建模应用场景",
     "url": "http://10.88.40.5/help.html#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"
   }, {
-    "label": "虎符使用简介",
+    "label": "数据建模使用简介",
     "url": "http://10.88.40.5/help.html#%E8%99%8E%E7%AC%A6%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B"
   }, {
-    "label": "虎符的用户",
+    "label": "数据建模的用户",
     "url": "http://10.88.40.5/help.html#%E8%99%8E%E7%AC%A6%E7%9A%84%E7%94%A8%E6%88%B7"
   }, {
     "label": "管理中心",
@@ -102,10 +104,10 @@ const menus = reactive([{
   description: "工业低代码开发平台", 
   url: "/gonggong/",
   links: [{
-    "label": "共工产品概述",
+    "label": "应用搭建产品概述",
     "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%85%B1%E5%B7%A5%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0"
   }, {
-    "label": "共工名词解释",
+    "label": "应用搭建名词解释",
     "url": "/gonggong/docs/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/%E5%85%B1%E5%B7%A5%E5%85%A5%E9%97%A8/%E5%85%B1%E5%B7%A5%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"
   }, {
     "label": "搭建应用demo",
@@ -158,7 +160,7 @@ const menus = reactive([{
   }]
 }, {
   key: 'gopt', 
-  label: "GOpt", 
+  label: "决策优化", 
   description: "进化多目标优化算法平台", 
   url: "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45",
   links: [{
@@ -168,13 +170,13 @@ const menus = reactive([{
     "label": "首页导航",
     "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "GOpt基础知识介绍",
+    "label": "决策优化基础知识介绍",
     "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "GOpt模板搭建流程",
+    "label": "决策优化模板搭建流程",
     "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
-    "label": "GOpt模板调试",
+    "label": "决策优化模板调试",
     "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
   }, {
     "label": "组件参数介绍",
@@ -222,13 +224,28 @@ html {
         padding: 16px 24px;
         border-bottom: 1px solid #EAECEF;
         width: calc(100% - 48px);
+        display: flex;
+        align-items: center;
 
         .redirect {
           position: absolute;
           top: 16px;
           left: 24px;
-          width: 115px;
+          width: 215px;
           height: 30px;
+        }
+
+        .divider {
+          background: #EAECEF;
+          width: 1px;
+          height: 24px;
+          margin-right: 16px;
+        }
+        .name {
+          color: #1C2126;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
         }
       }
 
