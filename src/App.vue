@@ -160,31 +160,31 @@ const menus = reactive([{
   key: 'gopt', 
   label: "GOpt", 
   description: "进化多目标优化算法平台", 
-  url: "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45",
+  url: "/gopt/docs/gopt/",
   links: [{
     "label": "产品简介",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#1-%E4%BA%A7%E5%93%81%E7%AE%80%E4%BB%8B"
   }, {
     "label": "首页导航",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#2-%E9%A6%96%E9%A1%B5%E5%AF%BC%E8%88%AA"
   }, {
     "label": "GOpt基础知识介绍",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#3gopt%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BB%8B%E7%BB%8D"
   }, {
     "label": "GOpt模板搭建流程",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#31-gopt%E6%A8%A1%E6%9D%BF%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B"
   }, {
     "label": "GOpt模板调试",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#32-gopt%E6%A8%A1%E6%9D%BF%E8%B0%83%E8%AF%95"
   }, {
     "label": "组件参数介绍",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#33-%E7%BB%84%E4%BB%B6%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D"
   }, {
     "label": "拓展工具列表",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#34-%E6%8B%93%E5%B1%95%E5%B7%A5%E5%85%B7%E5%88%97%E8%A1%A8"
   }, {
     "label": "我的组件",
-    "url": "https://appa5e5neyp8107.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/image_text/i_62c3a12ee4b050af2397db45"
+    "url": "/gopt/docs/gopt/#35-%E6%88%91%E7%9A%84%E7%BB%84%E4%BB%B6"
   }]
 }]);
 
